@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+main() {
+
+  // operadoes aritméticos - soma (+), subtração (-)
+  // divisão (/) multiplicação (*) e módulo (%)
+  //  atenção a ordem de precedência
+
+  // escrever um algoritmo que realize uma soma de dois números e apresente o
+  // resultado
+
+  // passo 1 - declarar as variáveis
+  // passo 2 - recebe os dados
+  // passo 3 - monta a operação de processamento (cálculo)
+  // passo 4 - apresenta a saída
+
+  int numero1, numero2, resultadoSoma, resultadoSub, resultadoDiv, resultadoMult;
+
+  printf("Digite o primeiro numero \n");
+  scanf("%d", &numero1);
+  printf("\nDigite o segundo numero\n");
+  scanf("%d", &numero2);
+
+  //montar as operacoes:
+  
+  resultadoSoma = numero1 + numero2;
+  resultadoSub = numero1 - numero2;
+  resultadoMult = numero1 * numero2;
+  resultadoDiv = (float)numero1 / numero2;
+
+  printf("\nresultado soma: %d", resultadoSoma );
+  printf("\nresultado subtracao: %d", resultadoSub);
+  printf("\nresultado divisao: %2f", resultadoDiv);
+  printf("\nresultado multiplicacao: %d", resultadoMult);
+}

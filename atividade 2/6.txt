@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    // Declaração das variáveis
+    float custo_mercadoria, valor_frete, despesas_eventuais, valor_venda;
+    float custo_total, lucro, percentagem_lucro;
+
+    // Solicita o custo da mercadoria
+    printf("Digite o custo da mercadoria: ");
+    scanf("%f", &custo_mercadoria);
+
+    // Solicita o valor do frete
+    printf("Digite o valor do frete: ");
+    scanf("%f", &valor_frete);
+
+    // Solicita as despesas eventuais
+    printf("Digite o valor das despesas eventuais: ");
+    scanf("%f", &despesas_eventuais);
+
+    // Calcula o custo total
+    custo_total = custo_mercadoria + valor_frete + despesas_eventuais;
+
+    // Solicita o valor de venda
+    printf("Digite o valor de venda: ");
+    scanf("%f", &valor_venda);
+
+    // Calcula o lucro
+    lucro = valor_venda - custo_total;
+
+    // Calcula a percentagem de lucro
+    percentagem_lucro = (lucro / custo_total) * 100;
+
+    // Exibe os resultados
+    printf("\nCusto Total: R$%.2f\n", custo_total);
+    printf("Lucro: R$%.2f\n", lucro);
+    printf("Percentagem de Lucro: %.2f%%\n", percentagem_lucro);
+
+}
